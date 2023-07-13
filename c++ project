@@ -1,0 +1,54 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	string email,location;
+	int choice;
+	cout<<"WELCOME TO MY WEATHER\n";
+	cout<<"ENTER THE EMAIL ADDRESS:";
+	cin>>email;
+	cout<<"ENTER YOUR LOCATION:";
+	
+
+	while(true)
+{
+	cout<<"\nMENU:\n1.DISPLAY WEEKLY REPORT\n2.DISPLAY CURRENT CLIMATE\n3.DISPLAY YESTERDAY'S WEATHER\n4.DISPLAY TODAY'S WEATHER\n5.DISPLAY TOMMOROW'S WEATHER\n6.EXIT\n";
+	cout<<"please enter your choice:";
+	cin>>choice;
+
+	switch(choice)
+{
+	case 1:
+	cout<<"WEEKLY REPORT FOR"<<location<<":\n";
+	cout<<"THE WEATHER IS CLOUDY";
+	break;	
+	case 2:
+	cout<<"CURRENT CLIMATE FOR"<<location<<":\n";
+	cout<<"THE WEATHER IS RAINY";
+	break;	
+	case 3:
+	cout<<"YESTERDAY'S WEATHER FOR"<<location<<":\n";
+	cout<<"THE WEATHER IS THUNDERSTORM";
+	break;	
+	case 4:
+	cout<<"TODAY'S WEATHER FOR"<<location<<":\n";
+	cout<<"THE WEATHER IS SUNNY";
+	break;	
+	case 5:
+	cout<<"TOMMOROW'S WEATHER FOR"<<location<<":\n";
+	cout<<"THE WEATHER IS SUNNY";
+	break;	
+	case 6:
+	cout<<"GOODBYE\n";
+	cout<<"THANK YOU";
+	return 0;
+	default:
+	cout<<"INVALID CHOICE.\nplease try again";
+	break;
+	}
+	}
+}	
+	
